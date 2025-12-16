@@ -1,2 +1,2 @@
 # Portfolio
-This is a website portfolio that updates with the projects, activities, and things that I do related to Physics, Mathematics, Computer Science, and etc.
+This repository contains my main personal portfolio website along with any new projects I care to put within it. Regards STEM and Business in addition to technical information.
