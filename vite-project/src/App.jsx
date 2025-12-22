@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 const App = () => {
     const name = "PRINCE JONES";
+    const indication ="Website Still In Development";
     const title = "Applied Physics & Computational Strategist";
     const projects = [
         {
@@ -12,11 +13,11 @@ const App = () => {
         },
     ];
 
-    // --- Component Functions ---
-
-    // 1. Hero Section Component
     const Hero = () => (
         <header className="py-20 lg:py-32 text-center max-w-4xl mx-auto">
+             <p className="text-xs font-medium text-indigo-400 uppercase tracking-widest mb-4">
+                {indication}
+            </p>
             <p className="text-xl font-light text-indigo-400 uppercase tracking-widest mb-4">
                 {title}
             </p>
@@ -30,14 +31,13 @@ const App = () => {
                 <a href="https://github.com/PersoniousPrince" target="_blank" className="text-gray-400 hover:text-indigo-400 transition duration-300">
                     GitHub
                 </a>
-                <a href="mailto:pj738071@gmail.com" className="text-gray-400 hover:text-indigo-400 transition duration-300">
+                <a href="mailto:pj738071@gmail.com" target="_blank" className="text-gray-400 hover:text-indigo-400 transition duration-300">
                     Email
                 </a>
             </div>
         </header>
     );
 
-    // 2. Project List Component
     const ProjectSection = () => (
         <section id="projects" className="max-w-4xl mx-auto py-24 border-t border-gray-800">
             <h2 className="text-4xl font-bold text-white mb-16 tracking-tight">
@@ -63,13 +63,11 @@ const App = () => {
         </section>
     );
 
-
-    // 3. Main Render
     return (
         <div
           className="min-h-screen text-gray-100"
           style={{
-            backgroundColor: '#0F172A', // Dark Slate
+            backgroundColor: '#0F172A',
             background: 'radial-gradient(at 5% 95%, rgba(67, 56, 202, 0.2) 0%, transparent 50%), radial-gradient(at 95% 5%, rgba(30, 64, 175, 0.3) 0%, transparent 50%), #0F172A',
           }}
         >
